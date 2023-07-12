@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header header__container">
+      <div class="header__flex">
+        <h1 class="header__heading">Recipe App</h1>
+        <nav class="header__nav">
+          <a class="header__ancnav" href="index.html">Home</a>
+          <a class="header__ancnav" href="favorites.html"
+            >Library to store recipes</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <section class="search search__container">
+      <form class="form">
+        <label for="category" class="form__label">Category</label>
+        <select id="category" class="form__select">
+          <option selected></option>
+        </select>
+      </form>
+    </section>
+
+    <main class="main main__container">
+      <h2 class="main__heading">Results</h2>
+      <div id="results" class="main__grid"></div>
+    </main>
+
+    <div id="container-modal"></div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
